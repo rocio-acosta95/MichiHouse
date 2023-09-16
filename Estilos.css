@@ -107,7 +107,7 @@ header{
 }
 .banner{ 
     grid-area: banner;
-    background-image: url(../img/banner\ contacto.jpg);
+    background-image: url(./img/banner-contacto.png);
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -156,7 +156,7 @@ header{
 }
 .imgnosotros{
     grid-area: foto;
-    background-image: url(../img/banner\ -\ nosotros.jpg);
+    background-image: url(./img/banner\ -\ nosotros.jpg);
     background-position: center;
     background-size: cover;
     padding: 6rem;
@@ -164,7 +164,7 @@ header{
 }
 .img-item2{
     grid-area: foto;
-    background-image: url(../img/banner\ -\ nosotros2.jpg);
+    background-image: url(./img/banner\ -\ nosotros2.jpg);
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -173,7 +173,7 @@ header{
  }
  .img-item3{
     grid-area: foto;
-    background-image: url(../img/nosotros-vete.jpg);
+    background-image: url(./img/nosotros-vete.jpg);
     background-position: center;
     background-size: cover;
     margin: 2rem;
@@ -211,7 +211,7 @@ header{
 }
 .adopta{
     grid-area: mult;
-    background-image: url(../img/adopta.jpg);
+    background-image: url(./img/adopta.jpg);
     height: 500px;
     background-repeat: no-repeat;
     background-size: contain;
@@ -220,7 +220,7 @@ header{
 }
 .adopcion{
     grid-area: txt;
-    background-image: url(../img/ppa.jpg);
+    background-image: url(./img/ppa.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     width: 800px;
