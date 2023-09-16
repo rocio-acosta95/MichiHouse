@@ -1,0 +1,488 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+header{
+    display: flex;
+    background-image: url("../img/banner.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    border: 4px solid #7c6761;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 30px; 
+    margin: 20px;
+    padding: 10px;
+    .logo{
+        display: grid;
+        width: 150px;
+        border-radius: 100px;
+        .logo:hover{
+            padding: 10px;
+        }
+    }
+    .menu{
+        display: flex;
+        align-items: center;
+        flex-wrap: wrap;
+        gap: 30px;
+        font-family: 'Libre Baskerville';
+        font-size: 30px;
+        color: antiquewhite;
+        .titulo{
+            display: flex;
+            align-items: center;
+            margin-inline: 10px;
+            font-size: 30px;
+            margin-inline: 20px;
+            padding: 20px;
+            border: 2px solid;
+            color: #575253;
+            font-family: 'Libre Baskerville';
+        }
+    }
+    .ventanas{
+        display: flex;
+        text-decoration: none;
+        border-bottom: 2px solid;
+        color: #575253;
+        font-family: 'Libre Baskerville';
+        font-size: 30px;
+        margin-inline: 20px;
+        .ventanas:hover{
+            background-color:burlywood ;
+            padding: 2px;
+        }
+    }
+    .pieDePagina{
+        display: flex;
+        margin: 30px;
+        padding: 20px;
+        justify-content: center;
+        background-image: url("../img/banner.jpg");
+        background-size: cover;
+        background-repeat: no-repeat;
+        border: 4px solid #7c6761;
+        font-size: 30px;
+       
+    }
+} 
+.grid{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+    gap: 2rem;
+    padding: 2rem;
+    .grid_item1{
+        font-family: 'Libre Baskerville';
+        border: 8px double #daab9d;
+        padding: 2rem;
+    }
+    .grid_item2{
+        font-family: 'Libre Baskerville';
+        border: 8px double #daab9d;
+        padding: 2rem;
+    }
+}
+.img{
+display: flex;
+justify-content: center;
+background-color: #9b756a;
+border: 20px double #c09487;
+padding: 20px;
+margin: 20px;
+}
+/* INICIO */
+
+/* GALERIA */
+
+.grid_txt{
+    display: grid;
+    grid-template-columns: 1fr 1fr ;
+    grid-template-rows: 1fr ;
+    grid-template-areas: 
+    "grid_txt1 grid_img"
+    "grid_txt1 grid_img";
+    padding: 2rem;
+    margin: 2rem;
+    gap: 2rem;
+.grid_img{
+        background-image: url(../img/banner-galeria.jpg);
+        background-repeat: no-repeat;
+    }
+.grid_txt1{
+        grid-area: grid_txt1;
+        border: 8px double #daab9d; 
+        margin: 2rem;
+        padding: 2rem;
+        font-size: 25px;
+    }
+}
+.group{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas: 
+    "primero segundo"
+    "tercero cuarto";
+    background-image: url(../img/fondo\ galeria.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    border: 15px double #cc9d7d;
+    padding: 6rem;
+    margin: 4rem;
+    .group h3{
+        font-size: 30px;
+        text-align: center;
+        color: rgb(148, 90, 105);
+    }
+    .grid_pri{
+        grid-area: primero;
+        .astra{
+            padding: 2rem;
+            margin: 1rem;
+            border: 15px double #cc9d7d;
+            border-radius: 2rem;
+        }
+    }
+    .grid_segundo{
+        grid-area: segundo;
+        .zeya{
+            padding: 2rem;
+            margin: 1rem;
+            border: 15px double #cc9d7d;
+            border-radius: 2rem;
+        }
+    }
+    .grid_tercero{
+        grid-area: tercero;
+        .alma{
+            padding: 2rem;
+            margin: 1rem;
+           width: 650px;
+           height: 500px;
+           border: 15px double #cc9d7d;
+            border-radius: 2rem;
+        }
+    }
+    .grid_cuarto{
+        grid-area: cuarto;
+        .cera{
+            margin: 1rem;
+            padding: 1rem;
+            width: 600px;
+            height: 450px;
+            border: 15px double #cc9d7d;
+            border-radius: 2rem;
+        }
+    }
+}
+/* CONTACTO*/
+.grid_contact{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas:
+    "banner texto"
+    "banner texto";
+    .banner{ 
+        grid-area: banner;
+        background-image: url(../img/banner\ contacto.jpg);
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        margin: 2rem;
+    
+        .txt_consulta{
+            grid-area: texto;
+            padding: 4rem;
+            margin: 20px;
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+            font-size: 20px;
+            color: #833823;
+            background-color: #d1b3ab;
+            border: 15px double #cc9d7d;
+        
+        }
+    }
+}
+.form{
+    display: flex;
+    flex-direction:column;
+    align-items: flex-start;
+    padding: 4rem;
+    margin: 2rem;
+    font-size: 40px;
+    text-decoration: underline;
+    color: #833823;
+    background-color: #d1b3ab;
+    border: 15px double #cc9d7d;
+}
+.items{
+    margin: 6rem;
+    background-image: url(../img/banner-contacto.png);
+    background-repeat: no-repeat;
+    background-position: right;
+    background-size: contain;
+    padding: 4rem;
+    border: 15px double #cc9d7d;
+}
+/* CONTACTO */
+
+/* NOSOTROS */
+.grid-nosotros{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas:  
+    "texto foto"
+    "texto foto";
+    .textnosotros{
+        grid-area: texto;
+        padding: 6rem;
+        margin: 2rem;
+        font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        background-color: #e0bbb0;
+        border: 15px double #cc9d7d;
+    }
+    .imgnosotros{
+        grid-area: foto;
+        background-image: url(../img/banner\ -\ nosotros.jpg);
+        background-position: center;
+        background-size: cover;
+        padding: 6rem;
+        margin: 2rem;
+    }
+    .img-item2{
+        grid-area: banner;
+        background-image: url(../img/banner\ -\ nosotros2.jpg);
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        height: 300px;
+        margin: 2rem;
+        
+    }
+    .img-item3{
+        grid-area: banner;
+        background-image: url(../img/nosotros-vete.jpg);
+        background-position: center;
+        background-size: cover;
+        margin: 2rem;
+    }
+}
+/* NOSOTROS */
+
+/* PPA */
+.grid-ppa{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas:
+    "txt txtx"
+    "txt txtx";
+    .txt{
+        grid-area: txt;
+        padding: 2rem;
+        margin: 2rem;
+        border: 10px double #daab9d;
+        font-size: 20px;
+    }
+    .txt2{
+        grid-area: txtx;
+        padding: 2rem;
+        margin: 2rem;
+        border: 10px double #daab9d;
+        font-size: 20px;
+    }
+}
+.grid-mult{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas:
+    "mult txt"
+    "mult txt";
+.adopta{
+        grid-area: mult;
+        background-image: url(../img/adopta.jpg);
+        height: 500px;
+        background-repeat: no-repeat;
+        background-size: contain;
+        padding: 2rem;
+        margin: 3rem;
+    }
+    .adopcion{
+        grid-area: txt;
+        background-image: url(../img/ppa.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        width: 800px;
+        height: 300px;
+        padding: 4rem;
+        margin: 3rem;
+    
+    }
+}
+@media screen and (max-width: 480px){    
+    
+    .contenedor
+    { flex-direction: column;
+        flex-wrap: wrap;
+    }
+    
+.grid{
+grid-template-columns: 1fr;
+grid-template-rows: 1fr 1fr;
+gap: 2rem;
+padding: 2rem;
+}
+.img{
+    background-color: transparent;
+    border: 7px double #c9aba2;
+}
+.img_item{
+    width: 400px;
+    height: 300px;
+}
+.pieDePagina{
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+.grid_txt{
+    grid-template-columns: 1fr ;
+    grid-template-rows: 1fr 1fr ;
+    grid-template-areas:
+    "grid_txt1"
+    "grid_txt1"
+    "grid_img";
+}
+.astra{
+    width: 450px;
+    border: transparent;
+    margin: 4rem;
+    background-color: thistle;
+}
+.zeya{
+    width: 500px;
+    margin: 3rem;
+    border: transparent;
+    background-color: thistle;
+}
+.alma{
+    width: 450px;
+    height: 450px;
+    border: transparent;
+    margin: 4rem;
+    background-color: thistle;
+}
+.cera{
+    width: 450px;
+    height: 400px;
+    border: transparent;
+    margin: 4rem;
+    background-color: thistle;
+}
+.grid_txt1{
+    font-size: 17px;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.group{
+    grid-template-columns: 1fr ;
+    grid-template-rows: repeat(4, 1fr);
+    grid-template-areas: 
+    "primero"
+    "segundo"
+    "tercero"
+    "cuarto";
+    padding: 0px;
+    margin: -60px;
+    background-image: none;
+    border: transparent;
+    background-position: 0% 0%;
+}
+.menu{
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+.header{
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+/*CONTACTO*/
+
+.grid_contact{
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(3, 1fr);
+    grid-template-areas:
+    "texto"
+    "texto"
+    "banner";
+    .txt_consulta{
+        background-color: transparent;
+    }
+    .banner{
+    width: 400px;
+    height: 200px;
+    }
+    .form{
+        margin: 1rem;
+    }
+    .items{
+        margin: -60px;
+        background-image: none;
+        border: transparent;
+    }
+}
+
+
+/*NOSOTROS*/
+
+.textnosotros{
+    padding: 3rem;
+    background-color: transparent;
+    .imgnosotros{
+        background-image: none;
+    }
+    .img-item2{
+        background-image: none;
+    }
+    .img-item3{
+        background-image: none;
+    }
+    
+}
+
+/*PPA*/
+.grid-ppa{
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(4, 1fr);
+    grid-template-areas:
+    "txt"
+    "txt"
+    "txtx"
+    "txtx"
+    ;
+    .grid-mult{
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(4, 1fr);
+        grid-template-areas:
+        "mult"
+        "mult"
+        "txt"
+        "txt";
+    }
+    .adopta{
+        height: 150px;
+        margin: 1rem;
+    }
+    .adopcion{
+        width: 400px;
+        height: 200px;
+        padding: 1rem;
+        margin: 1rem;
+    }
+    }
+}

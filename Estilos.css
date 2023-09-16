@@ -1,0 +1,339 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+} 
+/*INICIO*/
+header{
+    display: flex;
+    background-image: url("../img/banner.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    border: 4px solid #7c6761;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 30px; 
+    margin: 20px;
+    padding: 10px;
+} 
+.logo{
+    display: grid;
+    width: 150px;
+    border-radius: 100px;
+}
+
+.logo:hover{
+    padding: 10px;
+}
+.ventanas{
+    display: flex;
+    text-decoration: none;
+    border-bottom: 2px solid;
+    color: #575253;
+    font-family: 'Libre Baskerville';
+    font-size: 30px;
+    margin-inline: 20px;
+}
+.ventanas:hover{
+    background-color:burlywood ;
+    padding: 2px;
+}
+.titulo{
+    display: flex;
+    align-items: center;
+    margin-inline: 10px;
+    font-size: 30px;
+    margin-inline: 20px;
+    padding: 20px;
+    border: 2px solid;
+    color: #575253;
+    font-family: 'Libre Baskerville';
+}
+.menu{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 30px;
+    font-family: 'Libre Baskerville';
+    font-size: 30px;
+    color: antiquewhite;
+}
+.texto h2{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    border: 6px double #cc9d7d;
+}
+.pieDePagina{
+    display: flex;
+    margin: 30px;
+    padding: 20px;
+    justify-content: center;
+    background-image: url("../img/banner.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    border: 4px solid #7c6761;
+    font-size: 30px;
+   
+}
+/* INICIO */
+
+/* GALERIA */
+
+.grid_txt{
+    display: grid;
+    grid-template-columns: 1fr 1fr ;
+    grid-template-rows: 1fr ;
+    grid-template-areas: 
+    "grid_txt1 grid_img"
+    "grid_txt1 grid_img";
+    padding: 2rem;
+    gap: 2rem;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 30px;
+    border: 10px double #cc9d7d;
+}
+.grid_img{
+    background-image: url(../img/banner-galeria.jpg);
+    background-repeat: no-repeat;
+}
+
+/* CONTACTO*/
+.grid_contact{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas:
+    "banner texto"
+    "banner texto";
+}
+.banner{ 
+    grid-area: banner;
+    background-image: url(../img/banner\ contacto.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin: 2rem;
+
+}
+.txt_consulta{
+    grid-area: texto;
+    padding: 4rem;
+    margin: 20px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 20px;
+    color: #833823;
+    border: 15px double #cc9d7d;
+
+}
+.form{
+   width: 400px;
+   gap: 1rem;
+   background-color: #cc9d7d;
+}
+.form .form-text{
+    text-align: center;
+    padding: 1rem;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+/* CONTACTO */
+
+/* NOSOTROS */
+.grid-nosotros{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-areas:  
+    "texto foto"
+    "texto foto"
+    "texto foto";
+}
+.textnosotros{
+    grid-area: texto;
+    padding: 6rem;
+    margin: 2rem;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    border: 15px double #cc9d7d;
+}
+.imgnosotros{
+    grid-area: foto;
+    background-image: url(../img/banner\ -\ nosotros.jpg);
+    background-position: center;
+    background-size: cover;
+    padding: 6rem;
+    margin: 2rem;
+}
+.img-item2{
+    grid-area: foto;
+    background-image: url(../img/banner\ -\ nosotros2.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 400px;
+    margin: 2rem;
+ }
+ .img-item3{
+    grid-area: foto;
+    background-image: url(../img/nosotros-vete.jpg);
+    background-position: center;
+    background-size: cover;
+    margin: 2rem;
+}
+/* NOSOTROS */
+.grid-ppa{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas:
+    "txt txtx"
+    "txt txtx";
+}
+.txt{
+    grid-area: txt;
+    padding: 2rem;
+    margin: 2rem;
+    border: 10px double #daab9d;
+    font-size: 20px;
+}
+.txt2{
+    grid-area: txtx;
+    padding: 2rem;
+    margin: 2rem;
+    border: 10px double #daab9d;
+    font-size: 20px;
+}
+.grid-mult{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas:
+    "mult txt"
+    "mult txt";
+}
+.adopta{
+    grid-area: mult;
+    background-image: url(../img/adopta.jpg);
+    height: 500px;
+    background-repeat: no-repeat;
+    background-size: contain;
+    padding: 2rem;
+    margin: 3rem;
+}
+.adopcion{
+    grid-area: txt;
+    background-image: url(../img/ppa.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 800px;
+    height: 300px;
+    padding: 4rem;
+    margin: 3rem;
+}
+
+/** animista **/
+.slide-in-top{-webkit-animation:slide-in-top .5s cubic-bezier(.25,.46,.45,.94) both;animation:slide-in-top .5s cubic-bezier(.25,.46,.45,.94) both}
+
+ @-webkit-keyframes slide-in-top{0%{-webkit-transform:translateY(-1000px);transform:translateY(-1000px);opacity:0}100%{-webkit-transform:translateY(0);transform:translateY(0);opacity:1}}@keyframes slide-in-top{0%{-webkit-transform:translateY(-1000px);transform:translateY(-1000px);opacity:0}100%{-webkit-transform:translateY(0);transform:translateY(0);opacity:1}}
+
+ .rotate-center{-webkit-animation:rotate-center .6s ease-in-out both;animation:rotate-center .6s ease-in-out both}
+
+@-webkit-keyframes rotate-center{0%{-webkit-transform:rotate(0);transform:rotate(0)}100%{-webkit-transform:rotate(360deg);transform:rotate(360deg)}}@keyframes rotate-center{0%{-webkit-transform:rotate(0);transform:rotate(0)}100%{-webkit-transform:rotate(360deg);transform:rotate(360deg)}}
+.slide-in-left{-webkit-animation:slide-in-left .5s cubic-bezier(.25,.46,.45,.94) both;animation:slide-in-left .5s cubic-bezier(.25,.46,.45,.94) both}
+
+@-webkit-keyframes slide-in-left{0%{-webkit-transform:translateX(-1000px);transform:translateX(-1000px);opacity:0}100%{-webkit-transform:translateX(0);transform:translateX(0);opacity:1}}@keyframes slide-in-left{0%{-webkit-transform:translateX(-1000px);transform:translateX(-1000px);opacity:0}100%{-webkit-transform:translateX(0);transform:translateX(0);opacity:1}}
+
+@media screen and (max-width: 480px) {
+   
+    .cards{
+        display: flex;
+        flex-direction: column;
+        margin: 4rem;
+        gap: 2rem;
+    }
+.videos{
+    display: flex;
+    flex-direction: column;
+}
+.pieDePagina{
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+.grid_txt{
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+}
+
+/*CONTACTO*/
+
+.grid_contact{
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(3, 1fr);
+    grid-template-areas:
+    "texto"
+    "texto"
+    "banner";
+}
+.txt_consulta{
+    background-color: transparent;
+}
+.banner{
+width: 400px;
+height: 200px;
+}
+.form{
+    margin: 1rem;
+}
+.items{
+    margin: -60px;
+    background-image: none;
+    border: transparent;
+}
+
+/*NOSOTROS*/
+
+.textnosotros{
+    padding: 3rem;
+    background-color: transparent;
+}
+.imgnosotros{
+    background-image: none;
+}
+.img-item2{
+    background-image: none;
+}
+.img-item3{
+    background-image: none;
+}
+
+/*PPA*/
+.grid-ppa{
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(4, 1fr);
+    grid-template-areas:
+    "txt"
+    "txt"
+    "txtx"
+    "txtx"
+    ;
+}
+.grid-mult{
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(4, 1fr);
+    grid-template-areas:
+    "mult"
+    "mult"
+    "txt"
+    "txt";
+}
+.adopta{
+    height: 150px;
+    margin: 1rem;
+}
+.adopcion{
+    width: 400px;
+    height: 200px;
+    padding: 1rem;
+    margin: 1rem;
+}
+    
+}

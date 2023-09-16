@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>contacto</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <link rel="stylesheet" href="../Estilos.css">
+</head>
+<body>
+    <header class="header">
+      <img class=" rotate-center logo" src="../img/logo.jpg" alt="">
+        <h1 class="titulo">CONTACTO</h1>
+        <nav class="navbar navbar-expand-lg">
+          <div class="container-fluid">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+              <ul class="navbar-nav">
+                <li class="nav-item">
+                  <a class="slide-in-top ventanas nav-link" href="./index.html">Inicio</a>
+                </li>
+                <li class="nav-item">
+                  <a class="slide-in-top ventanas nav-link active" aria-current="page" href="./Galeria.html">Galeria</a>
+                </li>
+                <li class="nav-item">
+                  <a class="slide-in-top ventanas nav-link" href="./nosotros.html">Nosotros</a>
+                </li>
+                <li class="nav-item">
+                  <a class="slide-in-top ventanas nav-link" href="./PPA.html">PPA</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+    </header>
+   
+    <section class="grid_contact">
+    <div class="banner"></div>
+  <div class="txt_consulta">
+    <h3>¡Bienvenido/a a nuestra página de consultas! Aquí encontrarás el 
+      lugar perfecto para plantear tus preguntas y obtener respuestas de 
+      manera rápida y confiable. Nuestra comunidad está lista para ayudarte en 
+      una amplia variedad de temas, desde asesoramiento de adopcion hasta consejos 
+      prácticos para el día a día. 
+      ¡No hay pregunta demasiado pequeña o demasiado grande para nosotros! </h3>
+  </div>
+   </section>
+
+   <section class="slide-in-left form container d-flex flex-column p-3 ">
+    <div class="dropdown">
+      <button class=" btn btn-outline-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+        Tipo de Consulta
+      </button>
+      <ul class="dropdown-menu">
+        <li><a class="dropdown-item" href="#">Adopcion</a></li>
+        <li><a class="dropdown-item" href="#">Transito</a></li>
+        <li><a class="dropdown-item" href="#">Voluntariado</a></li>
+        <li><a class="dropdown-item" href="#">Donacion</a></li>
+      </ul>
+    </div>
+    <input  class="form-text rounded-pill" type="text" name="nombre" id="nombre" placeholder="Ingrese su nombre">
+    <input  class="form-text rounded-pill" type="email" name="Email" id="email" placeholder="ingrese su Email" required>
+    <input  class="form-text rounded-pill" type="number" name="contacto" id="contacto" placeholder="Numero de Contacto" required>
+    <textarea class="form-text rounded-bottom" name="Dejanos tu comentario" id="" cols="10" rows="10"></textarea>
+   </section>
+
+   <h4 class="container d-flex justify-content-center p-3">Le gustaria recibir novedades?</h4>
+
+   <section class="container d-flex justify-content-center p-3">
+    <input type="radio" id="Si" name="noticias"> <label for="Si">Si</label>
+    <input type="radio"  id="No" name="noticias"> <label for="No">No</label>
+   </section>
+   <div class="container d-flex justify-content-center">
+    <input type="submit" value="Enviar">
+   </div>
+
+   <section class="container d-flex justify-content-center p-5">
+    <iframe class="ubicacion" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d52343.08435770104!2d-57.99436971111758!3d-34.920430869593204!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95a2e62b1f0085a1%3A0xbcfc44f0547312e3!2sLa%20Plata%2C%20Provincia%20de%20Buenos%20Aires!5e0!3m2!1ses-419!2sar!4v1688254693680!5m2!1ses-419!2sar" 
+    width="600" height="450" style="border:0;" allowfullscreen=""
+     loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+ </iframe>
+   </section>
+
+ <footer class="pieDePagina">
+    <a class="ventanas" href="../index.html">inicio</a>
+    <a class="ventanas" href="./Galeria.html">Galeria</a>
+    <a class="ventanas" href="./PPA.html">Ppa</a>
+<a class="ventanas" href="./nosotros.html">Nosotros</a>
+ </footer>
+
+
+
+ <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" 
+integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>    
+</body>
+</html>
